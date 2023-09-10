@@ -34,7 +34,7 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/chandnirk4949/flat_organization_hierarchy_search.git
-```
+
 2. Navigate to the project directory:
 cd flat-organizational-hierarchy
 
