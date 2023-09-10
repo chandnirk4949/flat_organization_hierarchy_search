@@ -44,6 +44,7 @@ pip install -r requirements.txt
 ### Environment Variables
 Create a '.env' file in the project root directory with the following environment variables:
 
+   ```bash
 DATABASE_NAME=your-database-name
 DATABASE_USER=your_database_user
 DATABASE_PASS=your_database_password
