@@ -34,7 +34,7 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/chandnirk4949/flat_organization_hierarchy_search.git
-
+```
 2. Navigate to the project directory:
 cd flat-organizational-hierarchy
 
@@ -44,14 +44,14 @@ pip install -r requirements.txt
 ### Environment Variables
 Create a '.env' file in the project root directory with the following environment variables:
 
-   ```bash
-DATABASE_NAME=your-database-name
-DATABASE_USER=your_database_user
-DATABASE_PASS=your_database_password
-DB_PORT=your-port
-ALLOWED_IP=your-allowed-IP
-DATABASE_HOST=your_database_host
-
+```bash
+    DATABASE_NAME=your-database-name
+    DATABASE_USER=your_database_user
+    DATABASE_PASS=your_database_password
+    DB_PORT=your-port
+    ALLOWED_IP=your-allowed-IP
+    DATABASE_HOST=your_database_host
+```
 Replace the placeholders (your_database_name, your_database_user, your_database_password, etc.) with your actual database connection details.
 
 ## Usage
