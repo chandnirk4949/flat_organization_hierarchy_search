@@ -1,0 +1,31 @@
+{% comment %} the html template to be rendered {% endcomment %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Employee</title>
+</head>
+<body>
+    <h1>Search for an Employee</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="search_name">Enter Employee Name:</label>
+        <input type="text" name="search_name" required>
+        
+        <p>Select Direction:</p>
+        <input type="radio" name="direction" value="left" id="left" required>
+        <label for="left">Left</label>
+        
+        <input type="radio" name="direction" value="right" id="right" required>
+        <label for="right">Right</label>
+        
+        <button type="submit">Search</button>
+    </form>
+
+    {% if searched_employee %}
+    <h2>Search Result:</h2>
+    <p>Name: {{ searched_employee.name }}</p>
+    <p>Selected Direction: {{ direction }}</p>
+    <p>Child: {% if child %}{{ child.name }}{% else %}None{% endif %}</p>
+    {% endif %}
+</body>
+</html>
