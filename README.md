@@ -36,10 +36,14 @@ Before you begin, ensure you have met the following requirements:
    git clone https://github.com/chandnirk4949/flat_organization_hierarchy_search.git
 
 2. Navigate to the project directory:
-cd flat-organizational-hierarchy
+```bash
+cd flat-organizational-hierarchy-search
+```
 
 3. Install the project dependencies:
+```bash
 pip install -r requirements.txt
+```
 
 ### Environment Variables
 Create a '.env' file in the project root directory with the following environment variables:
@@ -52,12 +56,15 @@ Create a '.env' file in the project root directory with the following environmen
     ALLOWED_IP=your-allowed-IP
     DATABASE_HOST=your_database_host
 ```
+
 Replace the placeholders (your_database_name, your_database_user, your_database_password, etc.) with your actual database connection details.
 
 ## Usage
 ### Search
 1. Run the Django development server:
+```bash
 python manage.py runserver
+```
 
 2. Access the web application in your browser at 'http://localhost:8000/search_employee/'.
 
@@ -69,14 +76,19 @@ python manage.py runserver
 To set up the database and populate it with sample data, follow these steps:
 
 1. Create a MySQL database:
+```bash
 CREATE DATABASE your_database_name;
+```
+
 Replace 'your_database_name' with your desired database name.
 
 2. Update the database settings in settings.py to use the newly created database.
 
 3. Apply migrations and insert data:
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
